@@ -1,0 +1,3 @@
+[submodule "GQS"]
+	path = GQS
+	url = https://github.com/julihet/GQS.git
