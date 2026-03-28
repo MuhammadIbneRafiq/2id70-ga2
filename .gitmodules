@@ -1,3 +1,6 @@
 [submodule "GQS"]
 	path = GQS
 	url = https://github.com/julihet/GQS.git
+[submodule "gdbmeter"]
+	path = gdbmeter
+	url = https://github.com/MuhammadIbneRafiq/gdbmeter.git
