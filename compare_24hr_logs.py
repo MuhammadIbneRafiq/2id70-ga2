@@ -8,7 +8,6 @@ and non-empty result rates.
 Usage:
     python compare_24hr_logs.py
 """
-
 import re
 import statistics
 import json
@@ -213,10 +212,8 @@ def analyze_mutation_evolution(queries, result_sizes):
 
 
 def main():
-    base = Path(r"c:\Users\wifi stuff\OneDrive - TU Eindhoven\2id70-ga2")
-
-    v4_log = base / "gqs_v4_24hour_run.log"
-    v5_log = base / "GQS" / "gqs_24hour_run.log"
+    v4_log = "src/gqs_v4_24hour_run.log.txt"
+    v5_log = "src/gqs_24hour_run.log.txt"
 
     print("Parsing logs...")
     v4 = parse_log_file(v4_log, "Neo4j 4.4")
@@ -451,7 +448,7 @@ def main():
             "v5": compute_stats(v5_vals),
         }
 
-    json_path = base / "gqs_24hr_comparison.json"
+    json_path = "src/gqs_24hr_comparison.json"
     with open(json_path, "w") as f:
         json.dump(report, f, indent=2)
     print(f"\nJSON report saved to: {json_path}")
