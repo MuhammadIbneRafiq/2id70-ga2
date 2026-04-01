@@ -1,0 +1,403 @@
+{
+  "neo4j_version": "5.20.0",
+  "log_directory": "c:\\Users\\wifi stuff\\OneDrive - TU Eindhoven\\2id70-ga2\\GQS\\logs\\6\\neo4j",
+  "summary": {
+    "total_log_files": 5,
+    "total_match_queries": 589,
+    "total_create_queries": 78,
+    "total_schema_statements": 770,
+    "constraints_created": 201,
+    "indexes_created": 569,
+    "total_bugs_found": 2,
+    "logic_bugs_found": 0,
+    "database_crashes": 1,
+    "has_syntax_errors": true
+  },
+  "file_breakdown": [
+    {
+      "file": "neo4jdatabase0-1774896542369-0-0.log",
+      "queries": 64,
+      "schema_stmts": 103,
+      "bugs": 2,
+      "size_kb": 58.7
+    },
+    {
+      "file": "neo4jdatabase0-1774896542369-0-cur.log",
+      "queries": 64,
+      "schema_stmts": 103,
+      "bugs": 0,
+      "size_kb": 49.1
+    },
+    {
+      "file": "neo4jdatabase0-1774898290958-0-cur.log",
+      "queries": 334,
+      "schema_stmts": 222,
+      "bugs": 0,
+      "size_kb": 1366.6
+    },
+    {
+      "file": "neo4jdatabase0-1774901647680-0-cur.log",
+      "queries": 60,
+      "schema_stmts": 229,
+      "bugs": 0,
+      "size_kb": 55.4
+    },
+    {
+      "file": "neo4jdatabase0-1774902661435-0-cur.log",
+      "queries": 145,
+      "schema_stmts": 113,
+      "bugs": 0,
+      "size_kb": 745.2
+    }
+  ],
+  "query_complexity_stats": {
+    "length_chars": {
+      "count": 589,
+      "mean": 3836.19,
+      "median": 3811,
+      "std": 3113.97,
+      "min": 121,
+      "max": 15408,
+      "p25": 205,
+      "p75": 5697
+    },
+    "match_clauses": {
+      "count": 589,
+      "mean": 1.86,
+      "median": 2,
+      "std": 0.96,
+      "min": 1,
+      "max": 6,
+      "p25": 1,
+      "p75": 2
+    },
+    "optional_match": {
+      "count": 589,
+      "mean": 0.4,
+      "median": 0,
+      "std": 0.68,
+      "min": 0,
+      "max": 4,
+      "p25": 0,
+      "p75": 1
+    },
+    "with_clauses": {
+      "count": 589,
+      "mean": 9.01,
+      "median": 9,
+      "std": 8.17,
+      "min": 0,
+      "max": 45,
+      "p25": 0,
+      "p75": 13
+    },
+    "unwind_clauses": {
+      "count": 589,
+      "mean": 0.72,
+      "median": 0,
+      "std": 0.94,
+      "min": 0,
+      "max": 4,
+      "p25": 0,
+      "p75": 1
+    },
+    "where_clauses": {
+      "count": 589,
+      "mean": 2.26,
+      "median": 2,
+      "std": 1.75,
+      "min": 0,
+      "max": 6,
+      "p25": 0,
+      "p75": 4
+    },
+    "unique_nodes": {
+      "count": 589,
+      "mean": 7.41,
+      "median": 8,
+      "std": 4.1,
+      "min": 2,
+      "max": 17,
+      "p25": 2,
+      "p75": 10
+    },
+    "unique_relationships": {
+      "count": 589,
+      "mean": 16.54,
+      "median": 16,
+      "std": 15.21,
+      "min": 0,
+      "max": 80,
+      "p25": 0,
+      "p75": 24
+    },
+    "unique_labels": {
+      "count": 589,
+      "mean": 3.77,
+      "median": 5,
+      "std": 2.56,
+      "min": 0,
+      "max": 7,
+      "p25": 0,
+      "p75": 6
+    },
+    "unique_rel_types": {
+      "count": 589,
+      "mean": 5.7,
+      "median": 6,
+      "std": 3.68,
+      "min": 1,
+      "max": 16,
+      "p25": 1,
+      "p75": 8
+    },
+    "unique_properties": {
+      "count": 589,
+      "mean": 30.08,
+      "median": 33,
+      "std": 17.69,
+      "min": 3,
+      "max": 70,
+      "p25": 7,
+      "p75": 44
+    },
+    "and_conditions": {
+      "count": 589,
+      "mean": 84.16,
+      "median": 79,
+      "std": 72.9,
+      "min": 0,
+      "max": 346,
+      "p25": 0,
+      "p75": 129
+    },
+    "or_conditions": {
+      "count": 589,
+      "mean": 4.88,
+      "median": 3,
+      "std": 5.7,
+      "min": 0,
+      "max": 30,
+      "p25": 0,
+      "p75": 8
+    },
+    "not_conditions": {
+      "count": 589,
+      "mean": 2.52,
+      "median": 2,
+      "std": 2.98,
+      "min": 0,
+      "max": 16,
+      "p25": 0,
+      "p75": 4
+    },
+    "total_conditions": {
+      "count": 589,
+      "mean": 91.57,
+      "median": 90,
+      "std": 77.92,
+      "min": 0,
+      "max": 361,
+      "p25": 0,
+      "p75": 141
+    },
+    "string_ops_total": {
+      "count": 589,
+      "mean": 12.41,
+      "median": 12,
+      "std": 11.52,
+      "min": 0,
+      "max": 71,
+      "p25": 0,
+      "p75": 18
+    },
+    "aggregations_total": {
+      "count": 589,
+      "mean": 0.56,
+      "median": 0,
+      "std": 0.96,
+      "min": 0,
+      "max": 9,
+      "p25": 0,
+      "p75": 1
+    },
+    "order_by": {
+      "count": 589,
+      "mean": 1.03,
+      "median": 1,
+      "std": 1.07,
+      "min": 0,
+      "max": 5,
+      "p25": 0,
+      "p75": 2
+    },
+    "limit_clauses": {
+      "count": 589,
+      "mean": 0.42,
+      "median": 0,
+      "std": 0.69,
+      "min": 0,
+      "max": 4,
+      "p25": 0,
+      "p75": 1
+    },
+    "skip_clauses": {
+      "count": 589,
+      "mean": 0.53,
+      "median": 0,
+      "std": 0.76,
+      "min": 0,
+      "max": 4,
+      "p25": 0,
+      "p75": 1
+    },
+    "distinct": {
+      "count": 589,
+      "mean": 0.41,
+      "median": 0,
+      "std": 0.62,
+      "min": 0,
+      "max": 3,
+      "p25": 0,
+      "p75": 1
+    }
+  },
+  "property_key_distribution": {
+    "total_unique_properties": 213,
+    "top_20_most_used": [
+      {
+        "key": "k108",
+        "count": 1902
+      },
+      {
+        "key": "k128",
+        "count": 1627
+      },
+      {
+        "key": "k133",
+        "count": 1410
+      },
+      {
+        "key": "k131",
+        "count": 1353
+      },
+      {
+        "key": "k130",
+        "count": 1334
+      },
+      {
+        "key": "k132",
+        "count": 1296
+      },
+      {
+        "key": "k23",
+        "count": 1214
+      },
+      {
+        "key": "k117",
+        "count": 1003
+      },
+      {
+        "key": "k104",
+        "count": 988
+      },
+      {
+        "key": "k98",
+        "count": 980
+      },
+      {
+        "key": "k101",
+        "count": 973
+      },
+      {
+        "key": "k118",
+        "count": 920
+      },
+      {
+        "key": "k102",
+        "count": 908
+      },
+      {
+        "key": "k127",
+        "count": 899
+      },
+      {
+        "key": "k100",
+        "count": 866
+      },
+      {
+        "key": "k18",
+        "count": 852
+      },
+      {
+        "key": "k9",
+        "count": 823
+      },
+      {
+        "key": "k14",
+        "count": 823
+      },
+      {
+        "key": "k33",
+        "count": 762
+      },
+      {
+        "key": "k181",
+        "count": 739
+      }
+    ]
+  },
+  "label_distribution": {
+    "total_unique_labels": 7,
+    "frequencies": {
+      "0": 2052,
+      "2": 1596,
+      "1": 1407,
+      "3": 1250,
+      "5": 995,
+      "6": 230,
+      "4": 154
+    }
+  },
+  "relationship_type_distribution": {
+    "total_unique_rel_types": 27,
+    "frequencies": {
+      "8": 1712,
+      "13": 1411,
+      "12": 859,
+      "9": 744,
+      "14": 641,
+      "15": 552,
+      "3": 478,
+      "0": 464,
+      "22": 341,
+      "7": 311,
+      "6": 297,
+      "10": 293,
+      "21": 281,
+      "11": 256,
+      "2": 211,
+      "17": 203,
+      "20": 186,
+      "1": 130,
+      "26": 120,
+      "5": 99,
+      "4": 92,
+      "28": 75,
+      "19": 66,
+      "23": 64,
+      "18": 11,
+      "16": 9,
+      "24": 1
+    }
+  },
+  "bug_analysis": {
+    "bug_type_counts": {
+      "ResultMismatchException": 1,
+      "DatabaseCrashed": 1
+    },
+    "has_logic_bugs": false,
+    "has_crashes": true,
+    "has_syntax_errors": true
+  }
+}
