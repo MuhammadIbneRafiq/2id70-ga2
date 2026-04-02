@@ -1,5 +1,6 @@
 # Testing Graph Databases with Synthesized Queries: Replicating GQS with different versions of Neo4j
-This repository contains the code of group 7 for assignment 2 for the course 2ID70.
+This repository was forked from [GQS](https://github.com/Graph-Query-Synthesis/GQS) 
+and used for an assignment.
 
 The current method of testing graph databases has a problem of false detection of logic bugs, 
 which can cause social costs and trust crises. The paper Testing Graph Databases with 
@@ -52,9 +53,9 @@ server.http.listen_address=127.0.0.1:___PORT___2
 
 Add a text file `config.txt` in `GQS/` containing the following:
 ```
-startCommand=aa=$PWD; mkdir -p ~/neo4j/THREAD_FOLDER; cd ~/neo4j/THREAD_FOLDER; cp -r $aa/neo4j ~/neo4j/THREAD_FOLDER; mkdir -p ./logs/neo4j; cd neo4j; ./change_port.sh conf/neo4j.conf THREAD_WEB THREAD_SERVER; ./bin/neo4j-admin server console 2>&1 &
-stopCommand=kill -9 `netstat -tulnp | grep :THREAD_WEB | awk '{print $7}' | cut -d'/' -f1`
-resetCommand=rm -rf ~/neo4j/THREAD_FOLDER
+startCommand=bash ~/neo4j_start.sh THREAD_FOLDER THREAD_WEB THREAD_SERVER
+stopCommand=bash ~/neo4j_stop.sh THREAD_WEB
+resetCommand=bash ~/neo4j_reset.sh THREAD_FOLDER
 ```
 
 Run the following commands to build Neo4j:
@@ -95,7 +96,7 @@ We made the following changes in the foler `GQS`:
 ```
 
 ### 2. **config.txt** — WSL-native Unix commands
-```@c:\Users\wifi stuff\OneDrive - TU Eindhoven\2id70-ga2\GQS\config.txt:1-3
+```
 startCommand=bash ~/neo4j_start.sh THREAD_FOLDER THREAD_WEB THREAD_SERVER
 stopCommand=bash ~/neo4j_stop.sh THREAD_WEB
 resetCommand=bash ~/neo4j_reset.sh THREAD_FOLDER
