@@ -51,13 +51,6 @@ server.bolt.listen_address=127.0.0.1:___PORT___1
 server.http.listen_address=127.0.0.1:___PORT___2
 ```
 
-Add a text file `config.txt` in `GQS/` containing the following:
-```
-startCommand=bash ~/neo4j_start.sh THREAD_FOLDER THREAD_WEB THREAD_SERVER
-stopCommand=bash ~/neo4j_stop.sh THREAD_WEB
-resetCommand=bash ~/neo4j_reset.sh THREAD_FOLDER
-```
-
 Run the following commands to build Neo4j:
 ```
 cd neo4j-<version>
@@ -113,12 +106,10 @@ resetCommand=bash ~/neo4j_reset.sh THREAD_FOLDER
 # References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
-
 <div id="ref-xie2018" class="csl-entry">
 
 Yin, Z., Liu, S., & Basin, D. (2025). Testing Graph Databases with Synthesized Queries. 
 Proceedings of the ACM on Management of Data, 3(4), 1–26. <https://doi.org/10.1145/3749186>
 
 </div>
-
 </div>
